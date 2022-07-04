@@ -7,7 +7,8 @@ size_t get_list_num(const listint_t *h);
  * @head: double pointer to the head node
  * Return: 1 if True 0 is false
  */
-int is_palindrome(listint_t **head){
+int is_palindrome(listint_t **head)
+{
 	 int length = get_list_num(*head);
 	int store_half[length];
 	int i = 0;
