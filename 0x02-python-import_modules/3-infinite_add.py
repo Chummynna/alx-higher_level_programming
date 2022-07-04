@@ -1,7 +1,11 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    from hidden_4 import *
-    arr = dir()
-    for i in range(0, len(arr)):
-        if arr[i][0:2] != "__":
-            print("{}".format(arr[i]))
+    from sys import argv
+    if len(argv) == 1:
+        print(0)
+    else:
+        sum = 0
+        for i in range(len(argv)):
+            if i != 0:
+                sum += int(argv[i])
+        print(sum)
